@@ -1,0 +1,29 @@
+Source: node-ansistyles
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: saravanan30erd <saravanan30erd@gmail.com>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends:
+ debhelper-compat (= 13)
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.1
+Homepage: https://github.com/thlorenz/ansistyles
+Vcs-Git: https://salsa.debian.org/js-team/node-ansistyles.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-ansistyles
+Rules-Requires-Root: no
+
+Package: node-ansistyles
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Multi-Arch: foreign
+Description: prints output in different styles
+ Functions that surround a string with ansistyle codes so it prints in style.
+ .
+ This library is a dependency of npm, Node.js package manager.
+ .
+ In case you need colors, have a look at ansicolors.
+ .
+ Node.js is an event-based server-side JavaScript engine.
